@@ -145,7 +145,11 @@ p {
   margin: 24px;
   padding: 8px 12px;
   border: 2px solid var(--color-white);
-  border-radius: 4px;
+  border-radius: 10px;
+}
+
+.home__contact:hover {
+  background-color: var(--color-dark-white);
 }
 
 .section {
@@ -241,4 +245,49 @@ p {
 .tools,
 .etc {
   padding: 20px;
+}
+
+.work__Categories {
+  margin: 40px;
+}
+
+.category__btn.active,
+.category__btn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+.category__btn {
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+}
+
+.project {
+  background-color: none;
+}
+
+#contact {
+  background-color: var(--color-orange);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+}
+.contact__links i {
+  transition: all var(--animation-duration) ease-in;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-light-grey);
 }
