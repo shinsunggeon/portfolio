@@ -7,19 +7,18 @@ document.addEventListener("scroll", () => {
     navbar.classList.add("navbar--dark");
   } else {
     navbar.classList.remove("navbar--dark");
-    navbarMenu.classList.remove("open");
   }
+  navbarMenu.classList.remove("open");
 });
 
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector(".navbar__menu");
 navbarMenu.addEventListener("click", (event) => {
-  const targer = event.target;
-  const link = targer.dataset.link;
+  const target = event.target;
+  const link = target.dataset.link;
   if (link == null) {
     return;
   }
-
   scrollIntoView(link);
 });
 

@@ -61,6 +61,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 /* Typography */
 
@@ -175,6 +176,7 @@ p {
 
 .section {
   padding: 50px;
+  padding-top: 110px;
   text-align: center;
   margin: auto;
 }
@@ -333,8 +335,25 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 28px;
+    --font-medium: 18px;
+    --font-regular: 15px;
+    --font-small: 13px;
+    --font-micro: 10px;
+  }
+
+  .home__avatar {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -352,5 +371,11 @@ p {
 
   .navbar__menu.open {
     display: block;
+  }
+
+  .section {
+    padding: 13px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
