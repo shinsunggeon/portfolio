@@ -100,12 +100,13 @@ p {
   background-color: transparent;
   align-items: center;
   color: #eeeeee;
-  padding: 13px;
+  padding: 10px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
-  padding: 8px;
+  padding: 6px;
   background-color: var(--color-orange);
 }
 
