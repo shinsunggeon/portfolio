@@ -93,14 +93,25 @@ p {
 }
 
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-orange);
+  background-color: transparent;
   align-items: center;
   color: #eeeeee;
-  padding: 16px;
+  padding: 13px;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
+#navbar.navbar--dark {
+  padding: 8px;
+  background-color: var(--color-orange);
+}
+
+.active {
+  border: 2px solid var(--color-white);
+}
 .navbar__menu {
   display: flex;
 }
@@ -132,13 +143,14 @@ p {
 #home {
   background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 110px;
   text-align: center;
 }
 
 .home__avatar {
   width: 300px;
   height: 300px;
-  border-radius: 60%;
+  border-radius: 50%;
   border: 2px solid var(--color-light-white);
 }
 
@@ -273,7 +285,9 @@ p {
 }
 
 .project {
-  background-color: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 #contact {
